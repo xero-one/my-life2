@@ -1,6 +1,5 @@
 import React from "react";
-import ReactRouter from "react-router";
-import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import "./index.css";
 import App from "./App";
 import Home from "./pages/Home";
@@ -21,21 +20,15 @@ return (
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
+
             <Route exact path="/my-skills" component={MySkills} />
-    
+                <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
+                <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
+                <Route exact path="/my-skills/audio-production" component={AudioProduction} />
+                <Route exact path="/my-skills/video-production" component={VideoProduction} />
 
             <Route exact path="/credentials" component={Credentials} />
             <Route exact path="/contact" component={Contact} />
-
-
-            <Route path="/community" component={Community} />
-            <Route path="/community-job-detail" component={CommunityJobDetail} />
-            {/* <Route path="/community-saved-detail" component={CommunitySavedDetail} /> */}
-
-            <Route path="/employer-posts" component={EmployerPosts} />
-            <Route path="/employer-job-detail" component={EmployerJobDetail} />
-
-            <Route component={NoMatch} />
           </Switch>
         </React.Fragment>
       </Router>

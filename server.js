@@ -6,6 +6,8 @@ const express = require("express");
 
 const routes = require("./routes");
 
+const path = require("path");
+
 /*Configure our port by seting it to a variable*/
 const PORT = process.env.PORT || 3000;
 
@@ -30,7 +32,7 @@ app.listen(PORT, function() {
     entry: "./src/index.js",
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "index_bundle.js",
+      filename: "Home.js",
       publicPath: "/"
     },
     module: {
@@ -41,10 +43,5 @@ app.listen(PORT, function() {
     },
     devServer: {
       historyApiFallback: true,
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: "app/index.html"
-      })
-    ]
+    }
   };

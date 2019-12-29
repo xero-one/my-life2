@@ -10,7 +10,7 @@ import MySkills from "./pages/MySkills";
   import VideoProduction from ".pages/VideoProduction";
 
 import Credentials from "./pages/Credentials";
-import Contact from "./pages/Contact-Me";
+import Contact from "./pages/Contact";
 
 const App = () => {
 return (

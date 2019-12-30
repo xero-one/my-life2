@@ -27,9 +27,11 @@ app.listen(PORT, function() {
     console.log(`What's up 🌎  ==> Your "${nameOfApp}" project server is now listening on PORT ${PORT}!`);
   });
   
-
-  module.exports = {
-    entry: "./src/index.js",
+/*Webpack configuration*/
+module.exports = {
+    entry: {
+      app: "./client/src/App.js"
+    },
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "Home.js",

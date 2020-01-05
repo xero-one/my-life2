@@ -22,7 +22,7 @@ class Navbar extends React.component() {
               <p>CG</p>
               <ul>
                 <li>
-                  <Link to={["/", "/home"]}>Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <Link to="/my-skills">My Skills</Link>
@@ -51,36 +51,26 @@ class Navbar extends React.component() {
             </nav>
 
 
+          
+            <React.Fragment>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
+
+                <Route exact path="/my-skills" component={MySkills} />
+                    <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
+                    <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
+                    <Route exact path="/my-skills/audio-production" component={AudioProduction} />
+                    <Route exact path="/my-skills/video-production" component={VideoProduction} />
+
+                <Route exact path="/credentials" component={Credentials} />
+                <Route exact path="/contact" component={Contact} />
+              </Switch>
+            </React.Fragment>
           </div>
-          <React.Fragment>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-
-              <Route exact path="/my-skills" component={MySkills} />
-                  <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
-                  <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
-                  <Route exact path="/my-skills/audio-production" component={AudioProduction} />
-                  <Route exact path="/my-skills/video-production" component={VideoProduction} />
-
-              <Route exact path="/credentials" component={Credentials} />
-              <Route exact path="/contact" component={Contact} />
-            </Switch>
-          </React.Fragment>
         </Router>
      </NavBar> 
   );}
 };
 
-export default App;
-
-
-const NavBar = props => {
-   return ( 
-        <nav className="NavBody">
-            
-        </nav>
-        );
-};
-
-export default NavBar;
+export default navBar;

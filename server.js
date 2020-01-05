@@ -28,6 +28,7 @@ app.listen(PORT, function() {
   });
   
 /*Webpack configuration*/
+/*
 module.exports = {
     entry: {
       app: "./client/src/App.js"
@@ -47,3 +48,4 @@ module.exports = {
       historyApiFallback: true,
     }
   };
+*/

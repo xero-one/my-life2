@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
-import "./index.css";
-import App from "./App";
 import Home from "./pages/Home";
 import MySkills from "./pages/MySkills";
   import SoftwareEngineer from "./pages/SoftwareEngineer";
@@ -12,28 +10,47 @@ import MySkills from "./pages/MySkills";
 import Credentials from "./pages/Credentials";
 import Contact from "./pages/Contact";
 
-const App = () => {
-return (
-    <Global>
-      <Router>
-        <React.Fragment>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/home" component={Home} />
+class App extends React.Component {
 
-            <Route exact path="/my-skills" component={MySkills} />
-                <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
-                <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
-                <Route exact path="/my-skills/audio-production" component={AudioProduction} />
-                <Route exact path="/my-skills/video-production" component={VideoProduction} />
-
-            <Route exact path="/credentials" component={Credentials} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-        </React.Fragment>
-      </Router>
-    </Global>
-  );
-};
+  constructor(props) { 
+    this.state = {
+      title: "Chad Gresham",
+      headerLinks: [
+        {
+          title: "Home", 
+          path: "/"
+        },
+        {
+          title: "My Skills",
+          path: "/my-skills"
+        },
+        {
+          title: "Software Engineering",
+          path: "/my-skills/software-engineering"
+        },
+        {
+          title: "Art & Design",
+          path: "/my-skills/art-and-design"
+        },
+        {
+          title: "Audio Production",
+          path: "/my-skills/audio-production"
+        },
+        {
+          title: "Video Production",
+          path: "/my-skills/video-production"
+        },
+        {
+          title: "Credentials",
+          path: "/credentials"
+        },
+        {
+          title: "Contact",
+          path: "/contact"
+        }
+      ]
+    }
+  }
+}
 
 export default App;

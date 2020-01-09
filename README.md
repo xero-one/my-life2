@@ -1,3 +1,3 @@
-<h1>My Portfolio</h1>
+<h1 align="center">My Portfolio</h1>
 <br>
 <p>In progress</p>

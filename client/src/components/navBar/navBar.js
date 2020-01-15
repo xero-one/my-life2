@@ -25,30 +25,30 @@ class NavBar extends React.component() {
               <div>
                 <ul className={"nav-links"}>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link className={"a-tag"} to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/my-skills">My Skills</Link>
+                    <Link className={"a-tag"} to="/my-skills">My Skills</Link>
                       <ul>
                           <li>
-                            <Link to="/my-skills/software-engineering">Software Engineering</Link>
+                            <Link className={"a-tag"} to="/my-skills/software-engineering">Software Engineering</Link>
                           </li>
                           <li>
-                            <Link to="/my-skills/art-and-design">Art and Design</Link>
+                            <Link className={"a-tag"} to="/my-skills/art-and-design">Art and Design</Link>
                           </li>
                           <li>
-                            <Link to="/my-skills/audio-production">Audio Production</Link>
+                            <Link className={"a-tag"} to="/my-skills/audio-production">Audio Production</Link>
                           </li>
                           <li>
-                            <Link to="/my-skills/video-production">Video Production</Link>
+                            <Link className={"a-tag"} to="/my-skills/video-production">Video Production</Link>
                           </li>
                       </ul>
                   </li>
                   <li>
-                    <Link to="/credentials">Credentials</Link>
+                    <Link className={"a-tag"} to="/credentials">Credentials</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link className={"a-tag"} to="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>

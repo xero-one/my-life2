@@ -12,42 +12,46 @@ import Contact from "./pages/Contact";
 import "./navBar.css";
 import "./navBar.js";
 
-class Navbar extends React.component() {
+class NavBar extends React.component() {
   render() {
     return(
       <NavBar>
         <Router>
           <div className={"nav-body"} id={"nav-body"}> 
             <nav>
-              <p className={"logo"}>CG</p>
-              <ul className={"nav-options"}>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/my-skills">My Skills</Link>
-                    <ul>
-                        <li>
-                          <Link to="/my-skills/software-engineering">Software Engineering</Link>>
-                        </li>
-                        <li>
-                          <Link to="/my-skills/art-and-design">Art and Design</Link>>
-                        </li>
-                        <li>
-                          <Link to="/my-skills/audio-production">Audio Production</Link>
-                        </li>
-                        <li>
-                          <Link to="/my-skills/video-production">Video Production</Link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                  <Link to="/credentials">Credentials</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
+              <div>
+                <h4 className={"logo"}>CG</h4>
+              </div>
+              <div>
+                <ul className={"nav-links"}>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/my-skills">My Skills</Link>
+                      <ul>
+                          <li>
+                            <Link to="/my-skills/software-engineering">Software Engineering</Link>
+                          </li>
+                          <li>
+                            <Link to="/my-skills/art-and-design">Art and Design</Link>
+                          </li>
+                          <li>
+                            <Link to="/my-skills/audio-production">Audio Production</Link>
+                          </li>
+                          <li>
+                            <Link to="/my-skills/video-production">Video Production</Link>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <Link to="/credentials">Credentials</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
             </nav>
 
 
@@ -73,4 +77,4 @@ class Navbar extends React.component() {
   );}
 };
 
-export default navBar;
+export default NavBar;

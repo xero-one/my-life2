@@ -31,24 +31,10 @@ app.listen(PORT, function() {
   });
   
 /*Webpack configuration*/
-/*
 module.exports = {
-    entry: {
-      app: "./client/src/App.js"
-    },
-    output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: "Home.js",
-      publicPath: "/"
-    },
-    module: {
-      rules: [
-        { test: /\.(js)$/, use: "babel-loader" },
-        { test: /\.css$/, use: [ "style-loader", "css-loader" ]}
-      ]
-    },
-    devServer: {
-      historyApiFallback: true,
-    }
-  };
-*/
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
+};

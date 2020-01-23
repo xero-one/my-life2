@@ -10,21 +10,6 @@ import MySkills from "./pages/MySkills";
 import Credentials from "./pages/Credentials";
 import Contact from "./pages/Contact";
 
-import SVG, {React, Circle, Text} from "react-native-svg"
-
-
-render(){
-  return (
-    <div style={styles.container}>
-      <svg width="300" height="200">
-          <Rect width="100%" height="100%" fill="red" />
-          <Circle cx="150" cy="100" r="80" fill="green" />
-          <p x="150" y="125" font-size="60">Hello World</p> 
-      </svg>
-      </div>
-  )
-};
-
 class App extends React.Component {
 
   constructor(props) { 

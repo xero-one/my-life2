@@ -1,15 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
+/*import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Home from "./pages/Home";
 import MySkills from "./pages/MySkills";
   import SoftwareEngineer from "./pages/SoftwareEngineer";
   import ArtDesign from "./pages/ArtDesign";
-  import AudioProduction from ".pages/AudioProduction";
-  import VideoProduction from ".pages/VideoProduction";
+  import AudioProduction from "./pages/AudioProduction";
+  import VideoProduction from "./pages/VideoProduction";
 
 import Credentials from "./pages/Credentials";
 import Contact from "./pages/Contact";
-
+*/
+/*
 class App extends React.Component {
 
   constructor(props) { 
@@ -52,7 +53,16 @@ class App extends React.Component {
     }
   }
 }
+*/
 
+const App = () => {
 
+  return (<div>
+    <p>Chad Gresham</p>
+  </div>
+
+    );
+  };
 
 export default App;
+

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
 import NavBar from "../components/navBar/navBar.js";
 
 const element = <h1>This is a test</h1>;

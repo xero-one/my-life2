@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from "../../pages/Home";
 import MySkills from "../../pages/MySkills";
@@ -12,7 +12,7 @@ import Contact from "../../pages/Contact";
 import "./navBar.css";
 import "./navBar.js";
 
-class NavBar extends React.component() {
+class NavBar extends Component() {
   render() {
     return(
       <NavBar>

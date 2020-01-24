@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./components/navBar/navBar";
 /*import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Home from "./pages/Home";
 import MySkills from "./pages/MySkills";
@@ -57,7 +58,11 @@ class App extends React.Component {
 
 const App = () => {
 
-  return (<div>
+  return (
+  
+
+  <div>
+    <NavBar></NavBar>
     <p>Chad Gresham</p>
   </div>
 

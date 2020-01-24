@@ -12,7 +12,7 @@ import Contact from "../../pages/Contact";
 import "./navBar.css";
 import "./navBar.js";
 
-class NavBar extends Component() {
+class NavBar extends Component {
   render() {
     return(
       <NavBar>

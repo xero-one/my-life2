@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from "../../pages/HomePage";
-import MySkills from "../../pages/MySkillsPage";
-  import SoftwareEngineer from "../../pages/SoftwareEngineerPage";
-  import ArtDesign from "../../pages/ArtDesignPage";
-  import AudioProduction from "../../pages/AudioProductionPage";
-  import VideoProduction from "../../pages/VideoProductionPage";
-
-import Credentials from "../../pages/CredentialsPage";
-import Contact from "../../pages/ContactPage";
 import "./navBar.css";
 import "./navBar.js";
 

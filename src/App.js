@@ -59,8 +59,7 @@ class App extends React.Component {
       <Router>
         <React.Fragment>
             <Switch>
-              <Route exact path="/" exact render={() => <homePage> title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} </homePage>} component={HomePage} />
-              <Route exact path="/home" exact render={() => <homePage> title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} </homePage>} component={HomePage} />
+              <Route exact path="/" component={HomePage} />
 
               <Route exact path="/my-skills" component={MySkillsPage} />
                <Route exact path="/my-skills/software-engineering" component={SoftwareEngineerPage} />

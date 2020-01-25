@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Link } from 'react-router-dom';
 import "./navBar.css";
 import "./navBar.js";
 
-class NavBar extends Component {
-  render() {
+function NavBar(props) {
     return(
       <NavBar>
           <div className={"nav-body"} id={"nav-body"}> 
@@ -42,13 +41,10 @@ class NavBar extends Component {
                   </li>
                 </ul>
               </div>
-            </nav>
-
-
-          
+            </nav>  
           </div>
      </NavBar> 
-  );}
+  );
 };
 
 export default NavBar;

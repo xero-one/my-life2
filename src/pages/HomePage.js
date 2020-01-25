@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import NavBar from "../components/navBar/navBar.js";
+import React, { Component } from "react";
 
 function HomePage(props) {
 
     return(
-
+        <p>Home Page is working and ready to be built</p>
     );
 
 }

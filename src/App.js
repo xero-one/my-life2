@@ -1,6 +1,6 @@
 import React from "react";
-
-/*import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
+import NavBar from "..//src/components/navBar/navBar";
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Home from "./pages/Home";
 import MySkills from "./pages/MySkills";
   import SoftwareEngineer from "./pages/SoftwareEngineer";
@@ -10,11 +10,12 @@ import MySkills from "./pages/MySkills";
 
 import Credentials from "./pages/Credentials";
 import Contact from "./pages/Contact";
-*/
-/*
+
+
 class App extends React.Component {
 
-  constructor(props) { 
+  constructor(props) {
+    super(props);
     this.state = {
       title: "Chad Gresham",
       headerLinks: [
@@ -53,21 +54,29 @@ class App extends React.Component {
       ]
     }
   }
-}
-*/
 
-const App = () => {
+  render() {
+    return (
+      <Router>
+        <React.Fragment>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
 
-  return (
-  
+              <Route exact path="/my-skills" component={MySkills} />
+               <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
+               <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
+               <Route exact path="/my-skills/audio-production" component={AudioProduction} />
+               <Route exact path="/my-skills/video-production" component={VideoProduction} />
 
-  <div>
-    
-    <p>Chad Gresham</p>
-  </div>
-
+               <Route exact path="/credentials" component={Credentials} />
+               <Route exact path="/contact" component={Contact} />
+            </Switch>
+        </React.Fragment>
+      </Router>
     );
-  };
+  }
+};
 
 export default App;
 

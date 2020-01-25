@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from "../../pages/Home";
+import Home from "../../pages/HomePage";
 import MySkills from "../../pages/MySkills";
   import SoftwareEngineer from "../../pages/SoftwareEngineer";
   import ArtDesign from "../../pages/ArtDesign";
@@ -16,7 +16,6 @@ class NavBar extends Component {
   render() {
     return(
       <NavBar>
-        <Router>
           <div className={"nav-body"} id={"nav-body"}> 
             <nav>
               <div>
@@ -56,23 +55,7 @@ class NavBar extends Component {
 
 
           
-            <React.Fragment>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-
-                <Route exact path="/my-skills" component={MySkills} />
-                    <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
-                    <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
-                    <Route exact path="/my-skills/audio-production" component={AudioProduction} />
-                    <Route exact path="/my-skills/video-production" component={VideoProduction} />
-
-                <Route exact path="/credentials" component={Credentials} />
-                <Route exact path="/contact" component={Contact} />
-              </Switch>
-            </React.Fragment>
           </div>
-        </Router>
      </NavBar> 
   );}
 };

@@ -1,15 +1,14 @@
 import React from "react";
-import NavBar from "..//src/components/navBar/navBar";
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
-import Home from "./pages/Home";
-import MySkills from "./pages/MySkills";
-  import SoftwareEngineer from "./pages/SoftwareEngineer";
-  import ArtDesign from "./pages/ArtDesign";
-  import AudioProduction from "./pages/AudioProduction";
-  import VideoProduction from "./pages/VideoProduction";
+import HomePage from "./pages/Home";
+import MySkillsPage from "./pages/MySkillsPage";
+  import SoftwareEngineerPage from "./pages/SoftwareEngineerPage";
+  import ArtDesignPage from "./pages/ArtDesignPage";
+  import AudioProductionPage from "./pages/AudioProductionPage";
+  import VideoProductionPage from "./pages/VideoProductionPage";
 
-import Credentials from "./pages/Credentials";
-import Contact from "./pages/Contact";
+import CredentialsPage from "./pages/CredentialsPage";
+import ContactPage from "./pages/ContactPage";
 
 
 class App extends React.Component {
@@ -60,17 +59,17 @@ class App extends React.Component {
       <Router>
         <React.Fragment>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/home" component={HomePage} />
 
-              <Route exact path="/my-skills" component={MySkills} />
-               <Route exact path="/my-skills/software-engineering" component={SoftwareEngineer} />
-               <Route exact path="/my-skills/art-and-design" component={ArtDesign} />
-               <Route exact path="/my-skills/audio-production" component={AudioProduction} />
-               <Route exact path="/my-skills/video-production" component={VideoProduction} />
+              <Route exact path="/my-skills" component={MySkillsPage} />
+               <Route exact path="/my-skills/software-engineering" component={SoftwareEngineerPage} />
+               <Route exact path="/my-skills/art-and-design" component={ArtDesignPage} />
+               <Route exact path="/my-skills/audio-production" component={AudioProductionPage} />
+               <Route exact path="/my-skills/video-production" component={VideoProductionPage} />
 
-               <Route exact path="/credentials" component={Credentials} />
-               <Route exact path="/contact" component={Contact} />
+               <Route exact path="/credentials" component={CredentialsPage} />
+               <Route exact path="/contact" component={ContactPage} />
             </Switch>
         </React.Fragment>
       </Router>

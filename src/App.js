@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
-import HomePage from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import MySkillsPage from "./pages/MySkillsPage";
   import SoftwareEngineerPage from "./pages/SoftwareEngineerPage";
   import ArtDesignPage from "./pages/ArtDesignPage";
